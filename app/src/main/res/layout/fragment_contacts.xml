@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *                                     /@
+  ~  *                      __        __   /\/
+  ~  *                     /==\      /  \_/\/
+  ~  *                   /======\    \/\__ \__
+  ~  *                 /==/\  /\==\    /\_|__ \
+  ~  *              /==/    ||    \=\ / / / /_/
+  ~  *            /=/    /\ || /\   \=\/ /
+  ~  *         /===/   /   \||/   \   \===\
+  ~  *       /===/   /_________________ \===\
+  ~  *    /====/   / |                /  \====\
+  ~  *  /====/   /   |  _________    /      \===\
+  ~  *  /==/   /     | /   /  \ / / /         /===/
+  ~  * |===| /       |/   /____/ / /         /===/
+  ~  *  \==\             /\   / / /          /===/
+  ~  *  \===\__    \    /  \ / / /   /      /===/   ____                    __  _         __  __                __
+  ~  *    \==\ \    \\ /____/   /_\ //     /===/   / __ \__  ______  ____ _/ /_(_)____   / / / /__  ____ ______/ /_
+  ~  *    \===\ \   \\\\\\\/   ///////     /===/  / / / / / / / __ \/ __ `/ __/ / ___/  / /_/ / _ \/ __ `/ ___/ __/
+  ~  *      \==\/     \\\\/ / //////       /==/  / /_/ / /_/ / / / / /_/ / /_/ / /__   / __  /  __/ /_/ / /  / /_
+  ~  *      \==\     _ \\/ / /////        |==/   \___\_\__,_/_/ /_/\__,_/\__/_/\___/  /_/ /_/\___/\__,_/_/   \__/
+  ~  *        \==\  / \ / / ///          /===/
+  ~  *        \==\ /   / / /________/    /==/
+  ~  *          \==\  /               | /==/
+  ~  *          \=\  /________________|/=/
+  ~  *            \==\     _____     /==/
+  ~  *           / \===\   \   /   /===/
+  ~  *          / / /\===\  \_/  /===/
+  ~  *         / / /   \====\ /====/
+  ~  *        / / /      \===|===/
+  ~  *        |/_/         \===/
+  ~  *                       =
+  ~  *
+  ~  * Copyright(c) Developed by John Alves at 2020/1/28 at 6:24:13 for quantic heart studios
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_page_margin"
+    android:paddingLeft="@dimen/horizontal_page_margin"
+    android:paddingRight="@dimen/horizontal_page_margin"
+    android:paddingTop="@dimen/vertical_page_margin">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_intro" />
+
+    <TextView
+        android:id="@+id/contact_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/contact_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_contact" />
+
+    <Button
+        android:id="@+id/contact_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_contact" />
+
+</LinearLayout>

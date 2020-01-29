@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *                                     /@
+  ~  *                      __        __   /\/
+  ~  *                     /==\      /  \_/\/
+  ~  *                   /======\    \/\__ \__
+  ~  *                 /==/\  /\==\    /\_|__ \
+  ~  *              /==/    ||    \=\ / / / /_/
+  ~  *            /=/    /\ || /\   \=\/ /
+  ~  *         /===/   /   \||/   \   \===\
+  ~  *       /===/   /_________________ \===\
+  ~  *    /====/   / |                /  \====\
+  ~  *  /====/   /   |  _________    /      \===\
+  ~  *  /==/   /     | /   /  \ / / /         /===/
+  ~  * |===| /       |/   /____/ / /         /===/
+  ~  *  \==\             /\   / / /          /===/
+  ~  *  \===\__    \    /  \ / / /   /      /===/   ____                    __  _         __  __                __
+  ~  *    \==\ \    \\ /____/   /_\ //     /===/   / __ \__  ______  ____ _/ /_(_)____   / / / /__  ____ ______/ /_
+  ~  *    \===\ \   \\\\\\\/   ///////     /===/  / / / / / / / __ \/ __ `/ __/ / ___/  / /_/ / _ \/ __ `/ ___/ __/
+  ~  *      \==\/     \\\\/ / //////       /==/  / /_/ / /_/ / / / / /_/ / /_/ / /__   / __  /  __/ /_/ / /  / /_
+  ~  *      \==\     _ \\/ / /////        |==/   \___\_\__,_/_/ /_/\__,_/\__/_/\___/  /_/ /_/\___/\__,_/_/   \__/
+  ~  *        \==\  / \ / / ///          /===/
+  ~  *        \==\ /   / / /________/    /==/
+  ~  *          \==\  /               | /==/
+  ~  *          \=\  /________________|/=/
+  ~  *            \==\     _____     /==/
+  ~  *           / \===\   \   /   /===/
+  ~  *          / / /\===\  \_/  /===/
+  ~  *         / / /   \====\ /====/
+  ~  *        / / /      \===|===/
+  ~  *        |/_/         \===/
+  ~  *                       =
+  ~  *
+  ~  * Copyright(c) Developed by John Alves at 2020/1/28 at 5:52:8 for quantic heart studios
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quanticheart.permissionsdispatcherfuctions">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".camera.CameraActivity" />
+        <activity android:name=".contacts.ContactsFragment" />
+    </application>
+
+</manifest>
